@@ -1,0 +1,53 @@
+---
+import { Image } from 'astro:assets';
+import catioPlayground from '../assets/images/catio-playground.webp';
+---
+
+<section class="care" id="cuidado">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Cuidado con mimo</span>
+            <h2>Cuando no puedes estar, <span class="accent">nosotros sí</span>.</h2>
+            <p class="section-sub">Paseadores, cuidadores, hoteles, guarderías y estéticas con profesionales verificados, cámaras en vivo y seguimiento GPS. Como estar ahí sin estar.</p>
+        </div>
+        <div class="care-grid">
+            <div class="care-card care-card-large">
+                <Image src={catioPlayground} alt="Catio parque de juegos para gatos" />
+                <div class="care-card-body">
+                    <h3>🏨 Hoteles y guarderías de lujo</h3>
+                    <p>Suites privadas, catios al aire libre, juegos supervisados y cámaras 24/7. Tu michi o lomito vivirá sus mejores vacaciones.</p>
+                    <ul>
+                        <li>🏠 Hospedaje por noche, semana o mes</li>
+                        <li>📹 Cámaras con acceso en vivo</li>
+                        <li>🩺 Personal capacitado en primeros auxilios</li>
+                    </ul>
+                    <a href="#cuidado" class="btn btn-primary">Reservar suite</a>
+                </div>
+            </div>
+            <div class="care-card">
+                <div class="care-icon">🦮</div>
+                <h3>Paseadores certificados</h3>
+                <p>Paseos personalizados según la raza, edad y energía de tu lomito. GPS, fotos y reporte al final del recorrido.</p>
+                <a href="#cuidado" class="card-link">Contratar →</a>
+            </div>
+            <div class="care-card">
+                <div class="care-icon">🧑‍⚕️</div>
+                <h3>Cuidadores a domicilio</h3>
+                <p>Visitas en tu casa cuando viajas o trabajas. Alimentar, jugar, limpieza y mucho cariño. Verificados con antecedentes.</p>
+                <a href="#cuidado" class="card-link">Contratar →</a>
+            </div>
+            <div class="care-card">
+                <div class="care-icon">✂️</div>
+                <h3>Estética y spa</h3>
+                <p>Baño, corte, manicura, spa de patitas, aromaterapia. Tu peludito sale oliendo a gloria y sintiéndose una realeza.</p>
+                <a href="#cuidado" class="card-link">Agendar cita →</a>
+            </div>
+            <div class="care-card">
+                <div class="care-icon">🎓</div>
+                <h3>Adiestramiento positivo</h3>
+                <p>Entrenadores certificados con técnicas libres de castigo. Cachorros, rescate, ansiedad, trucos y obediencia.</p>
+                <a href="#cuidado" class="card-link">Empezar →</a>
+            </div>
+        </div>
+    </div>
+</section>

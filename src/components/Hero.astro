@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import heroCatSleeping from '../assets/images/hero-cat-sleeping.png';
+import heroCatCorgi from '../assets/images/hero-cat-corgi.png';
+---
+
+<section class="hero" id="hero">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <span class="pill"><span class="paw">🐾</span> La primera plataforma con <strong>especialidad michis</strong> · abierta a todos los peluditos</span>
+            <h1 class="hero-title">
+                Donde tu mascota es tratada como <span class="accent">persona</span>.
+                <span class="hero-paw-row">🐱 <em>(y nosotros sabemos que ya lo es).</em></span>
+            </h1>
+            <p class="hero-sub">
+                <strong>Michicondrias</strong> es el conglomerado más completo para mascotas de Latinoamérica. Tienda, salud con IA, adopción, cuidado, lugares pet friendly, GPS, funeraria, seguros, transporte y mucho más. <strong>Especialidad en gatos, corazón para todos.</strong>
+            </p>
+            <div class="hero-actions">
+                <a href="#servicios" class="btn btn-primary btn-lg">Explorar servicios</a>
+                <a href="#diagnostico" class="btn btn-secondary btn-lg">Probar Diagnóstico IA <span>✨</span></a>
+            </div>
+            <div class="hero-stats">
+                <div><strong>+120k</strong><span>peluditos felices</span></div>
+                <div><strong>+850</strong><span>aliados verificados</span></div>
+                <div><strong>24/7</strong><span>soporte real</span></div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card hero-card-main">
+                <Image src={heroCatSleeping} alt="Gato durmiendo tranquilo en su camita" loading="eager" />
+                <div class="hero-card-tag">🐾 Michi feliz</div>
+            </div>
+            <div class="hero-card hero-card-top">
+                <Image src={heroCatCorgi} alt="Gato y perro jugando juntos" loading="eager" />
+            </div>
+            <div class="hero-card hero-card-bottom">
+                <div class="mini-stat">
+                    <div class="mini-stat-icon">📍</div>
+                    <div>
+                        <strong>Simba</strong> está a <span>250 m</span> de ti
+                        <small>Trackeo GPS en vivo</small>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-paw paw-1">🐾</div>
+            <div class="floating-paw paw-2">🐾</div>
+        </div>
+    </div>
+</section>
