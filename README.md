@@ -8,7 +8,7 @@ La fuente de verdad del código es el monorepo `michicondrias` (`frontend/src/fe
 
 | Variable | Para qué |
 |---|---|
-| `NEXT_PUBLIC_WEB_APP_URL` | URL de la web app. Sin ella, «Entrar» y «Crear cuenta» bajan a la sección de la app. |
+| `NEXT_PUBLIC_WEB_APP_URL` | URL de la web app (por defecto `https://michicondrias.vercel.app`). Vacía: los botones bajan a la sección de la app. |
 | `NEXT_PUBLIC_APP_DOWNLOAD_URL` | Enlace de descarga (APK o tienda). Sin él, no se muestra el botón «Descargar la app». |
 
 ```bash
